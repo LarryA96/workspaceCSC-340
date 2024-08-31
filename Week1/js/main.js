@@ -1,5 +1,11 @@
+/* 
+Name: Larry Alston
+Due Date: September 9, 2024
+Assignment: Week 1 project "Moving ball"
+*/
 const ball = document.getElementById("ball");
 document.addEventListener("keydown", handleKeyPress);
+
 let position = 0;
 let moved = false;
 
