@@ -8,12 +8,12 @@ Assignment: Week 1 project "Moving ball"
 const ball = document.getElementById("ball");
 document.addEventListener("keydown", handleKeyPress);
 
-//Variables to set and track ball movement
+//Variable to set ball position
 let position = 0;
-let moved = false;
 
 //Moves ball according to key pressed
 function handleKeyPress(arrow) {
+  let moved = false;
   if (arrow.code === "ArrowLeft") {
     position = position - 10;
     moved = true;
@@ -27,11 +27,11 @@ function handleKeyPress(arrow) {
     moved = false;
   }
 
-  refresh();
+  refresh(moved);
 }
 
 //Updates ball position and logs new positions to console
-function refresh() {
+function refresh(moved) {
   ball.style.left = position + "px";
   if (moved == true) {
     console.log("New position is " + position + "px");
