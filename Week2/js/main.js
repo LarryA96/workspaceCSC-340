@@ -33,3 +33,5 @@ for (let item of favFoods) {
   newItem.innerHTML = item;
   list.append(newItem);
 }
+
+console.log("I'm feeling excited about this JavaScript Course!");
