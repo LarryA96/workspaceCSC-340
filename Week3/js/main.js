@@ -3,8 +3,8 @@ let favs = ["Falcons", "Sharks", "Turtles", "Crabs", "Snakes"];
 let fears = ["Spiders", "Cockroaches", "Maggots", "Piranhas", "Koala"];
 
 //Identify divs
-let divFavs = document.getElementById("divFavs");
-let divFear = document.getElementById("divFear");
+let divFavs = document.querySelector("#divFavs");
+let divFear = document.querySelector("#divFear");
 
 //Create lists
 let favList = document.createElement("ul");
