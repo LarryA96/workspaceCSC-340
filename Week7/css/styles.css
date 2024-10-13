@@ -1,0 +1,21 @@
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 80%;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 10%;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: left;
+  width: 30%;
+  margin: auto;
+  margin-top: 2%;
+}
