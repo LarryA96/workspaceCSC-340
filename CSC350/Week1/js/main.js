@@ -17,7 +17,7 @@ let clearButton = document.querySelector(".clear");
 clearButton.addEventListener("click", clearList);
 document.querySelector("#bottom").addEventListener("click", clearList);
 
-//Take value of input and add it to array
+//Take value of input and add it to array......."Add" button functionality
 function addItem() {
   locations.push(input.value);
   input.value = "";
@@ -31,7 +31,7 @@ function enter(event) {
   }
 }
 
-//Display array
+//Display array........Update visual list function
 function displayList() {
   list.innerHTML = "";
   locations.map(function (item) {
@@ -42,7 +42,7 @@ function displayList() {
   });
 }
 
-//Clear list
+//Clear list......"Clear" button functionality
 function clearList() {
   locations = [];
   list.innerHTML = "";
