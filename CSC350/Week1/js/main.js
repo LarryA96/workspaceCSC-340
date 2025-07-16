@@ -1,5 +1,26 @@
-//Create array to store locations
-let locations = [];
+/**Name: Larry Alston
+     Assignment: Week 1 Assignment - Mapping
+     Due Date: July 16, 2025 
+*/
+
+//Take value of input and add it to map......."Add" button functionality
+function addItem() {
+  locations.set(locationNum++, input.value);
+  input.value = "";
+  list.innerHTML = "";
+  locations.forEach(displayList);
+}
+
+//Allow user to submit entry with enter key
+function enter(event) {
+  if (event.keyCode === 13) {
+    addItem();
+  }
+}
+
+//Create map to store locations
+let locations = new Map();
+let locationNum = 0;
 
 //Create reference for unordered list
 let list = document.querySelector("#ul");
@@ -12,38 +33,22 @@ input.addEventListener("keydown", enter);
 let addButton = document.querySelector("#add");
 addButton.addEventListener("click", addItem);
 
+//Display new map........Update visual list function
+function displayList(value) {
+  let li = document.createElement("li");
+  li.innerHTML = value;
+  li.className = "listItem";
+  list.append(li);
+}
+
+//Clear map, visual list, and input field......"Clear" button functionality
+function clearList() {
+  locations.clear();
+  list.innerHTML = "";
+  input.value = "";
+}
+
 //Connect Event listener to Clear buttons
 let clearButton = document.querySelector(".clear");
 clearButton.addEventListener("click", clearList);
 document.querySelector("#bottom").addEventListener("click", clearList);
-
-//Take value of input and add it to array......."Add" button functionality
-function addItem() {
-  locations.push(input.value);
-  input.value = "";
-  displayList();
-}
-
-//Allow user to submit entry with enter key
-function enter(event) {
-  if (event.keyCode === 13) {
-    addItem();
-  }
-}
-
-//Display array........Update visual list function
-function displayList() {
-  list.innerHTML = "";
-  locations.map(function (item) {
-    let li = document.createElement("li");
-    li.innerHTML = item;
-    li.className = "listItem";
-    list.append(li);
-  });
-}
-
-//Clear list......"Clear" button functionality
-function clearList() {
-  locations = [];
-  list.innerHTML = "";
-}
