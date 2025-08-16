@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  height: 5%;
+  margin-bottom: 2%;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.imageCon {
+  width: 50%;
+  margin: 2% auto;
+}
+
+h2 {
+  width: fit-content;
+  white-space: nowrap;
+  margin: 1% auto;
+}
+
+p {
+  padding: 1%;
+}
+
+img {
+  width: 100%;
+}
