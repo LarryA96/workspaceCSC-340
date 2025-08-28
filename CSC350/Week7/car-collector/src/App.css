@@ -1,0 +1,48 @@
+#home-splash > img {
+  width: 40vw;
+}
+
+#socials {
+  text-align: center;
+}
+
+#socials > a {
+  margin: 3% 5vw;
+  display: block;
+}
+
+.navbar-brand > img {
+  width: 15%;
+  margin-right: 2vw;
+}
+
+.container > img {
+  margin: 0 auto 2vh auto;
+  display: block;
+}
+
+.card {
+  text-align: center;
+  margin: auto;
+}
+
+.btn {
+  margin-right: 0.5vw;
+}
+
+form {
+  margin-bottom: 3vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a > img {
+  width: 8%;
+  margin-right: 2%;
+}
